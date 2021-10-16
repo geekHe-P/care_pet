@@ -78,6 +78,9 @@ dependencies {
 //    implementation 'mysql:mysql-connector-java:5.1.30'
 //    implementation 'mysql:mysql-connector-java:8.0.25'
     implementation 'jboss:jboss-common-jdbc-wrapper:3.2.3'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation files('cardview')
 //    implementation files('libs/mysql-connector-java-8.0.25.jar')
 //    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testImplementation 'junit:junit:4.13.2'
@@ -85,4 +88,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 //    implementation files('libs/jboss-common-jdbc-wrapper.jar')
+    implementation "androidx.cardview:cardview:1.0.0"
 }
