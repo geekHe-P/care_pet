@@ -12,6 +12,10 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">养宠</string>
     <string name="title_dynamic">动态</string>
-    <string name="title_my">我的</string>
+    <string name="title_my">demo</string>
     <string name="title_community">社区</string>
+
+
+    <string name="ChangeInfo">demo</string>
+
 </resources>

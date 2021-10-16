@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.project_1" >
+    package="com.example.project_1">
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -10,20 +11,64 @@
         android:allowBackup="true"
         android:icon="@mipmap/launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/launcher"
         android:supportsRtl="true"
-        android:networkSecurityConfig="@xml/network_security_config"
-        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Project_1"
+        android:usesCleartextTraffic="true"
         tools:targetApi="n">
+        <activity android:name=".ui.my.MyCollected"></activity>
+        <activity android:name=".ui.my.MyFans" />
+        <activity android:name=".ui.my.MyFollow" />
+        <activity
+            android:name=".ui.my.commontools.Difficult"
+            android:label="疑难" />
+        <activity
+            android:name=".ui.my.commontools.Data"
+            android:label="资料" />
+        <activity
+            android:name=".ui.my.commontools.Notice"
+            android:label="通知" />
+        <activity
+            android:name=".ui.my.commontools.Shopping"
+            android:label="购物" />
+        <activity
+            android:name=".ui.my.commontools.CustomerService"
+            android:label="客服" />
+        <activity
+            android:name=".ui.my.commontools.Encyclopedias"
+            android:label="百科" />
+        <activity
+            android:name=".ui.my.commontools.Consult"
+            android:label="咨询" />
+        <activity
+            android:name=".ui.my.commontools.Personal"
+            android:label="个人" />
+        <activity
+            android:name=".ui.my.BrowseRecords"
+            android:label="浏览记录" />
+        <activity
+            android:name=".ui.my.MyCourse"
+            android:label="我的课程" />
+        <activity
+            android:name=".ui.my.MyCollection"
+            android:label="我的收藏" />
+        <activity
+            android:name=".ui.my.MyCreation"
+            android:label="我的创作" />
+        <activity
+            android:name=".ui.my.Setting"
+            android:label="设置" />
+        <activity
+            android:name=".ui.my.ChangeInfo"
+            android:label="编辑资料" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
-        </activity>
+            android:label="@string/title_activity_main" />
         <activity
-            android:hardwareAccelerated="false"
             android:name=".ui.login.LoginActivity"
-            android:label="@string/app_name" >
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
